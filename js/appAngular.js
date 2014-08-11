@@ -11,10 +11,12 @@ var testVar;
     var app = angular.module('AssessmentModule', []);
 
     //controller to work upon html and data
-    app.controller('CandidateController', function() {
+    app.controller('CandidateController', function($rootScope) {
         this.candidateCollections = GetCandidateData();
-        this.numbers = "[0 - 9] + \.[0 - 9] * ) | ([0 - 9] * \.[0 - 9] + ) | ([0 - 9] + ";
-
+        // $rootScope.ggg = false;
+        // $scope.clickHandler = function() {
+        //     $rootScope.ggg = !$rootScope.ggg;
+        // };
     });
 
     //Controller to deal with class append as per status //More over it's UI cotroller
@@ -53,71 +55,70 @@ var testVar;
 
 //Static Data to work upon
 
-var GetTestCollection =
-    var
+//var GetTestCollection =
+    
+// function() {
 
-function() {
+//     var test1 = {
+//         TestStatus: 'Active'
+//     };
 
-    var test1 = {
-        TestStatus: 'Active'
-    };
+//     var test2 = {
+//         TestStatus: 'InActive'
+//     };
 
-    var test2 = {
-        TestStatus: 'InActive'
-    };
+//     var test3 = {
+//         TestStatus: 'Active'
+//     };
 
-    var test3 = {
-        TestStatus: 'Active'
-    };
+//     var test4 = {
+//         TestStatus: 'InActive'
+//     };
 
-    var test4 = {
-        TestStatus: 'InActive'
-    };
+//     var test5 = {
+//         TestStatus: 'Active'
+//     };
 
-    var test5 = {
-        TestStatus: 'Active'
-    };
+//     var test6 = {
+//         TestStatus: 'InActive'
+//     };
 
-    var test6 = {
-        TestStatus: 'InActive'
-    };
+//     var test7 = {
+//         TestStatus: 'Active'
+//     };
 
-    var test7 = {
-        TestStatus: 'Active'
-    };
+//     var test8 = {
+//         TestStatus: 'InActive'
+//     };
 
-    var test8 = {
-        TestStatus: 'InActive'
-    };
+//     var test9 = {
+//         TestStatus: 'Active'
+//     };
 
-    var test9 = {
-        TestStatus: 'Active'
-    };
+//     var test10 = {
+//         TestStatus: 'InActive'
+//     };
 
-    var test10 = {
-        TestStatus: 'InActive'
-    };
+//     var test11 = {
+//         TestStatus: 'Active'
+//     };
 
-    var test11 = {
-        TestStatus: 'Active'
-    };
+//     var test12 = {
+//         TestStatus: 'InActive'
+//     };
 
-    var test12 = {
-        TestStatus: 'InActive'
-    };
+//     var test13 = {
+//         TestStatus: 'Active'
+//     };
 
-    var test13 = {
-        TestStatus: 'Active'
-    };
+//     var test14 = {
+//         TestStatus: 'InActive'
+//     };
 
-    var test14 = {
-        TestStatus: 'InActive'
-    };
+//     var testCollection = [test1, test2, test3, test4, test5, test6, test7, test8, test9, test10, test11, test12, test13, test14];
 
-    var testCollection = [test1, test2, test3, test4, test5, test6, test7, test8, test9, test10, test11, test12, test13, test14];
-
-    return testCollection;
-}
+//     return testCollection;
+// }
 
 var GetCandidateData = function() {
 
