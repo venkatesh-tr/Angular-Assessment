@@ -55,14 +55,14 @@ var testVar;
 
         this.showActive = true;
 
-       this.fnShowActiveTab = function() {
-            
-            
-            return this.showActive=true;
+        this.fnShowActiveTab = function() {
+
+
+            return this.showActive = true;
         };
 
-        this.fnShowInActiveTab = function(){
-            return this.showActive =false;
+        this.fnShowInActiveTab = function() {
+            return this.showActive = false;
         };
 
 
@@ -77,7 +77,7 @@ var testVar;
                 this.InActiveTestCollection.push(testCollection[i]);
             }
 
-            testVar = this.InActiveTestCollection;
+
 
         };
 
@@ -97,59 +97,143 @@ var testVar;
 function GetTestCollection() {
 
     var test1 = {
-        TestStatus: 'InActive'
+        TestStatus: 'InActive',
+        TestID: '001',
+        TestName: 'Offline HP',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test2 = {
-        TestStatus: 'InActive'
+        TestStatus: 'InActive',
+        TestID: '002',
+        TestName: 'Offline Dell',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test3 = {
-        TestStatus: 'Active'
+        TestStatus: 'Active',
+        TestID: '003',
+        TestName: 'Offline Samsung',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test4 = {
-        TestStatus: 'InActive'
+        TestStatus: 'InActive',
+        TestID: '004',
+        TestName: 'Offline Apple',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test5 = {
-        TestStatus: 'Active'
+        TestStatus: 'Active',
+        TestID: '003',
+        TestName: 'Offline Lenovo',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test6 = {
-        TestStatus: 'InActive'
+        TestStatus: 'InActive',
+        TestID: '005',
+        TestName: 'Offline Asus',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test7 = {
-        TestStatus: 'Active'
+        TestStatus: 'Active',
+        TestID: '006',
+        TestName: 'Offline HTC',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test8 = {
-        TestStatus: 'InActive'
+        TestStatus: 'InActive',
+        TestID: '007',
+        TestName: 'Offline Micromax',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test9 = {
-        TestStatus: 'Active'
+        TestStatus: 'Active',
+        TestID: '008',
+        TestName: 'Offline CareerNet',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test10 = {
-        TestStatus: 'InActive'
+        TestStatus: 'InActive',
+        TestID: '009',
+        TestName: 'Offline TI',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test11 = {
-        TestStatus: 'Active'
+        TestStatus: 'Active',
+        TestID: '010',
+        TestName: 'Offline DemoTest',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test12 = {
-        TestStatus: 'InActive'
+        TestStatus: 'InActive',
+        TestID: '011',
+        TestName: 'Offline Toshiba',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test13 = {
-        TestStatus: 'Active'
+        TestStatus: 'Active',
+        TestID: '012',
+        TestName: 'Offline Nokia',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var test14 = {
-        TestStatus: 'InActive'
+        TestStatus: 'InActive',
+        TestID: '013',
+        TestName: 'Offline Motorola',
+        Attented: 10,
+        Attending: 5,
+        NotAttended: 1,
+        PasswordDisabled: 0
     };
 
     var testCollection = [test1, test2, test3, test4, test5, test6, test7, test8, test9, test10, test11, test12, test13, test14];
