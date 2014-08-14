@@ -17,7 +17,7 @@
     <style></style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" ng-controller="TestController as testCtrl">
         <header class="row">
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
                 <span class="logo"><a href="#"><span>HiRePro Logo</span></a></span>
@@ -44,33 +44,33 @@
                 </div>
             </div>
         </header>
-        <article class="main-area">
+        <article class="main-area" >
             <div class="row">
                 <!-- Main Box to show Active and In-Active Test Numbers -->
                 <div class="col-lg-3" >
                     <div class="status-box" >
-                        <a href="#">
-                            <section class="state-active state-active-hover">
+                        <a href="#" ng-click="testCtrl.fnShowActiveTab()">
+                            <section class="state-active state-active-hover" >
                                 <h2>
                                     Active</h2>
                                 <p>
-                                    9</p>
+                                   {{testCtrl.ActiveTestCollection.length}}</p>
                             </section>
                         </a>
                     </div>
                     <div class="status-box">
-                        <a href="#">
+                        <a href="#" ng-click="testCtrl.fnShowInActiveTab()">
                             <section class="state-inactive">
                                 <h2>
                                     Inactive</h2>
                                 <p>
-                                    13</p>
+                                   {{testCtrl.InActiveTestCollection.length}}</p>
                             </section>
                         </a>
                     </div>
                 </div>
                 <!-- Box Plugin Area -->
-                <div class="col-lg-9 display-jobs">
+                <div class="col-lg-9 display-jobs" ng-show="testCtrl.showActive"  >
                     <div class="wrap">
                     <a href="#" class="glyphicon glyphicon-download-alt downLoadBtn"></a>
                         <div class="row-in" style="">

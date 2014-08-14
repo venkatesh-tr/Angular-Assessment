@@ -11,13 +11,22 @@ var testVar;
     var app = angular.module('AssessmentModule', []);
 
     //controller to work upon html and data
-    app.controller('CandidateController', function($rootScope) {
-        this.candidateCollections = GetCandidateData();
-        // $rootScope.ggg = false;
-        // $scope.clickHandler = function() {
-        //     $rootScope.ggg = !$rootScope.ggg;
-        // };
-    });
+    app.controller('CandidateController', ['$http',
+        function($http) {
+            //this.candidateCollections = GetCandidateData();
+
+            var store = this;
+            store.candidateCollections = {};
+            $http.get('js/candidate.json').success(function(data) {
+                store.candidateCollections = data;
+            });
+
+            // $rootScope.ggg = false;
+            // $scope.clickHandler = function() {
+            //     $rootScope.ggg = !$rootScope.ggg;
+            // };
+        }
+    ]);
 
     //Controller to deal with class append as per status //More over it's UI cotroller
     app.controller('CandidatStatusController', function() {
@@ -42,12 +51,40 @@ var testVar;
 
     //Controller to display Active and In-Active Test Boxes
     app.controller('TestController', function() {
-        this.testCollection = GetTestCollection();
-        // for (var i = 0; i < testCollection.length; i++) {
-        //     testCollection[i]
-        // };
+        var testCollection = GetTestCollection();
+
+        this.showActive = true;
+
+       this.fnShowActiveTab = function() {
+            
+            
+            return this.showActive=true;
+        };
+
+        this.fnShowInActiveTab = function(){
+            return this.showActive =false;
+        };
+
+
+        console.log(testCollection);
+        this.ActiveTestCollection = [];
+        this.InActiveTestCollection = [];
+
+        for (var i = 0; i < testCollection.length; i++) {
+            if (testCollection[i].TestStatus == 'Active') {
+                this.ActiveTestCollection.push(testCollection[i].TestStatus);
+            } else {
+                this.InActiveTestCollection.push(testCollection[i]);
+            }
+
+            testVar = this.InActiveTestCollection;
+
+        };
+
 
     });
+
+
 
 
 })();
@@ -56,69 +93,69 @@ var testVar;
 //Static Data to work upon
 
 //var GetTestCollection =
-    
-// function() {
 
-//     var test1 = {
-//         TestStatus: 'Active'
-//     };
+function GetTestCollection() {
 
-//     var test2 = {
-//         TestStatus: 'InActive'
-//     };
+    var test1 = {
+        TestStatus: 'InActive'
+    };
 
-//     var test3 = {
-//         TestStatus: 'Active'
-//     };
+    var test2 = {
+        TestStatus: 'InActive'
+    };
 
-//     var test4 = {
-//         TestStatus: 'InActive'
-//     };
+    var test3 = {
+        TestStatus: 'Active'
+    };
 
-//     var test5 = {
-//         TestStatus: 'Active'
-//     };
+    var test4 = {
+        TestStatus: 'InActive'
+    };
 
-//     var test6 = {
-//         TestStatus: 'InActive'
-//     };
+    var test5 = {
+        TestStatus: 'Active'
+    };
 
-//     var test7 = {
-//         TestStatus: 'Active'
-//     };
+    var test6 = {
+        TestStatus: 'InActive'
+    };
 
-//     var test8 = {
-//         TestStatus: 'InActive'
-//     };
+    var test7 = {
+        TestStatus: 'Active'
+    };
 
-//     var test9 = {
-//         TestStatus: 'Active'
-//     };
+    var test8 = {
+        TestStatus: 'InActive'
+    };
 
-//     var test10 = {
-//         TestStatus: 'InActive'
-//     };
+    var test9 = {
+        TestStatus: 'Active'
+    };
 
-//     var test11 = {
-//         TestStatus: 'Active'
-//     };
+    var test10 = {
+        TestStatus: 'InActive'
+    };
 
-//     var test12 = {
-//         TestStatus: 'InActive'
-//     };
+    var test11 = {
+        TestStatus: 'Active'
+    };
 
-//     var test13 = {
-//         TestStatus: 'Active'
-//     };
+    var test12 = {
+        TestStatus: 'InActive'
+    };
 
-//     var test14 = {
-//         TestStatus: 'InActive'
-//     };
+    var test13 = {
+        TestStatus: 'Active'
+    };
 
-//     var testCollection = [test1, test2, test3, test4, test5, test6, test7, test8, test9, test10, test11, test12, test13, test14];
+    var test14 = {
+        TestStatus: 'InActive'
+    };
 
-//     return testCollection;
-// }
+    var testCollection = [test1, test2, test3, test4, test5, test6, test7, test8, test9, test10, test11, test12, test13, test14];
+
+    return testCollection;
+}
 
 var GetCandidateData = function() {
 
