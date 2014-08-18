@@ -1,0 +1,22 @@
+ <div class="col-lg-3" >
+    <div class="status-box" >
+        <a href="#" ng-click="testCtrl.fnShowActiveTab()">
+            <section class="state-active state-active-hover" >
+                <h2>
+                    Active</h2>
+                    <p>
+                     {{testCtrl.ActiveTestCollection.length}}</p>
+                 </section>
+             </a>
+         </div>
+         <div class="status-box">
+            <a href="#" ng-click="testCtrl.fnShowInActiveTab()">
+                <section class="state-inactive">
+                    <h2>
+                        Inactive</h2>
+                        <p>
+                         {{testCtrl.InActiveTestCollection.length}}</p>
+                     </section>
+                 </a>
+             </div>
+         </div>

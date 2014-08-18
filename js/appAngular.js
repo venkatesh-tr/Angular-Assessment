@@ -84,7 +84,41 @@ var testVar;
 
     });
 
+app.directive('activeInactive',function(){
+    return {
+        restrict :'E',
+        templateUrl :'active-inactive.html'
 
+    };
+
+});
+
+app.directive('testStatus',function(){
+    return {
+        restrict :'E',
+        templateUrl :'test-status.html'
+
+    };
+
+});
+
+app.directive('testDate',function(){
+    return{
+        restrict : 'E',
+        templateUrl : 'test-date.html'
+    };
+
+});
+
+//Search Control Directives
+app.directive('searchControl',function(){
+    return {
+        restrict:'E',
+        templateUrl : 'search.html'
+
+    };
+
+});
 
 
 })();

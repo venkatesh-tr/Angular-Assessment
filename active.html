@@ -47,28 +47,7 @@
         <article class="main-area" >
             <div class="row">
                 <!-- Main Box to show Active and In-Active Test Numbers -->
-                <div class="col-lg-3" >
-                    <div class="status-box" >
-                        <a href="#" ng-click="testCtrl.fnShowActiveTab()">
-                            <section class="state-active state-active-hover" >
-                                <h2>
-                                    Active</h2>
-                                <p>
-                                   {{testCtrl.ActiveTestCollection.length}}</p>
-                            </section>
-                        </a>
-                    </div>
-                    <div class="status-box">
-                        <a href="#" ng-click="testCtrl.fnShowInActiveTab()">
-                            <section class="state-inactive">
-                                <h2>
-                                    Inactive</h2>
-                                <p>
-                                   {{testCtrl.InActiveTestCollection.length}}</p>
-                            </section>
-                        </a>
-                    </div>
-                </div>
+               <active-Inactive></active-Inactive> <!-- directive is used -->
                 <!-- Box Plugin Area -->
                 <div class="col-lg-9 display-jobs" ng-show="testCtrl.showActive"  >
                     <div class="wrap">
@@ -95,7 +74,7 @@
                                                             <p>
                                                                 Offline Mumbai</p>
                                                             <span>540</span>
-                                                            <button ng-click="clickHandler()">Show</button>
+                                                            <!-- <button ng-click="clickHandler()">Show</button> -->
                                                         </div>
                                                         <span class="footer-bar">
                                                             <div class="show2">
@@ -110,33 +89,11 @@
                                                                     class="glyphicon glyphicon-floppy-save make-inactive"></a></span>
                                                     </div>
                                                     <div id="box1a" class="shiftLeft" rel="firstCol firstRow">
-                                                        <span class="glyphicon glyphicon-arrow-left left-arrow"></span>
-                                                        <h2 class="test-status-h2">
-                                                            Test Status</h2>
-                                                        <ul class="right-list">
-                                                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-                                                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-                                                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-                                                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
-                                                        </ul>
+                                                        <test-Status></test-Status><!-- directive is used --> 
                                                     </div>
                                                     <div class="shiftDown01">
                                                         <div id="box1b" class="shiftDown" rel="firstCol firstRow">
-                                                            <span class="glyphicon glyphicon-arrow-up down-arrow"></span>
-                                                            <div class="dateWrap">
-                                                                <div class="date">
-                                                                    <p>
-                                                                        18 <span>Dec - 2013</span></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dateWrap2">
-                                                                To</div>
-                                                            <div class="dateWrap">
-                                                                <div class="date">
-                                                                    <p>
-                                                                        09 <span>Jan - 2013</span></p>
-                                                                </div>
-                                                            </div>
+                                                           <test-Date></test-Date><!-- directive is used -->
                                                         </div>
                                                     </div>
                                                     <div id="box2" class="baseBox baseBoxActive" rel="firstCol secondRow">
@@ -1036,47 +993,7 @@
     
 
         <article class="main-area" ng-controller="CandidateController as candidateCtrl">
-            <div class="row advFiltering">
-                <div class="col-lg-6 part-01">
-                    <div class="insideRow">
-                        <label for="lblID">
-                            ID:</label>
-                        <input name="txtSearchById" id="txtSearchById" type="text"  placeholder="Enter ID" class="lblID" ng-model="searchById">
-                        <label for="lblName">
-                            Name:</label>
-                        <input name="txtName" id="txtName" type="text" placeholder="Enter Name" class="lblName" ng-model="searchByName">
-                        <label for="lblLogID">
-                            Email ID:</label>
-                        <input name="txtEmailID" id="txtEmailID" type="text" placeholder="Enter Email ID" class="lblLogID" ng-model="searchByEmailID">
-                    </div>
-                </div>
-                <div class="col-lg-4 part-02">
-                    <div class="insideRow2Wrap">
-                        <div class="insideRow2">
-                            <input name="" type="checkbox" value=""><span class=" label label-info">Attending</span>
-                        </div>
-                        <div class="insideRow2">
-                            <input name="" type="checkbox" value=""><span class=" label label-danger">Not Attended</span>
-                        </div>
-                        <div class="insideRow2">
-                            <input name="" type="checkbox" value=""><span class=" label label-warning">Password
-                                Disabled</span>
-                        </div>
-                        <div class="insideRow2">
-                            <input name="" type="checkbox" value=""><span class=" label label-default">Attended</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 part-03">
-                    <div class="insideRow3">
-                        <a href="#"><span class="glyphicon glyphicon-floppy-save" title="Download List" rel="tooltip"
-                            data-toggle="tooltip" data-placement="left"></span></a><a href="#"><span class="glyphicon glyphicon-refresh"
-                                title="Refresh List" rel="tooltip" data-toggle="tooltip" data-placement="left"></span>
-                            </a>
-                    </div>
-                </div>
-                <br clear="all">
-            </div>
+            <search-Control></search-Control>
             <div class="col-lg-12 scrolling"  >
                 <table class="table table-hover table-bordered" align="left" width="100%" >
                     <tr>
