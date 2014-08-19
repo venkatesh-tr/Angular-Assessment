@@ -336,3 +336,5 @@ var GetCandidateData = function() {
     return candidateCollection;
 
 }
+
+
