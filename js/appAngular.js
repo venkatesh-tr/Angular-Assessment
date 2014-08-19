@@ -120,6 +120,16 @@ app.directive('searchControl',function(){
 
 });
 
+//Grid Directives
+app.directive('candidateGrid',function(){
+    return {
+        restrict:'E',
+        templateUrl:'candidate-grid.html'
+
+    };
+
+});
+
 
 })();
 
