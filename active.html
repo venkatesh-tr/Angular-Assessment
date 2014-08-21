@@ -45,7 +45,7 @@
             </div>
         </header>
         <article class="main-area" >
-            <div class="row">
+            <div class="row" ng-controller="ActiveBoxCtrl as activeCtrl">
                 <!-- Main Box to show Active and In-Active Test Numbers -->
                <active-Inactive></active-Inactive> <!-- directive is used -->
                 <!-- Box Plugin Area -->
@@ -62,32 +62,8 @@
                                             <div class="carousel-caption">
                                                 <div style="width: 1500px">
 
-                                                    <div id="box1" class="baseBox" rel="firstCol firstRow">
-                                                        <span class="header-bar">Job ID #346 
-                                                            <div class="show">
-                                                                <a onclick="shiftLeft(this, 'box1Down', 'box1a', 'box1b');" id="box1Left" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-right" title="Show Test Status" rel="tooltip"
-                                                                    data-toggle="tooltip" data-placement="left"></a>
-                                                            </div>
-                                                        </span>
-                                                        <div class="insideContent">
-                                                            <p>
-                                                                Offline Mumbai</p>
-                                                            <span>540</span>
-                                                            <!-- <button ng-click="clickHandler()">Show</button> -->
-                                                        </div>
-                                                        <span class="footer-bar">
-                                                            <div class="show2">
-                                                                <a onclick="shiftDown(this, 'box1Left', 'box1a', 'box1b');" id="box1Down" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-down" title="Test dates & time" rel="tooltip"
-                                                                    data-toggle="tooltip" data-placement="right"></a>
-                                                            </div>
-                                                            <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                class="glyphicon glyphicon-off make-inactive"></a><a href="#" title="Upload Test"
-                                                                    rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
-                                                                </a><a href="#" title="Download Test" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                    class="glyphicon glyphicon-floppy-save make-inactive"></a></span>
-                                                    </div>
+                                                    <!-- to put directives for box -->
+                                                    <box-Control></box-Control>
                                                     <div id="box1a" class="shiftLeft" rel="firstCol firstRow">
                                                         <test-Status></test-Status><!-- directive is used --> 
                                                     </div>

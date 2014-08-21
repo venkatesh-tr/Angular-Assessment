@@ -2,8 +2,8 @@
 <h2 class="test-status-h2">
 	Test Status</h2>
 	<ul class="right-list">
-		<li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-		<li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-		<li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-		<li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
+		<li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">{{activeCtrl.ActiveBoxData[0].Attented}}</span></a></li>
+		<li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">{{activeCtrl.ActiveBoxData[0].Attending}}</span></a></li>
+		<li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">{{activeCtrl.ActiveBoxData[0].NotAttended}}</span></a></li>
+		<li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">{{activeCtrl.ActiveBoxData[0].PasswordDisabled}}</span></a></li>
 	</ul>
