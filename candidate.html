@@ -1,0 +1,84 @@
+<!doctype html>
+<html ng-app="CandidateTableModule">
+<head>
+    <meta charset="utf-8">
+    <title>Assessment Test</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet/less" type="text/css" href="css/style.less">
+
+   
+    <style></style>
+</head>
+<body>
+
+    <div class="container" ng-controller="CandidateController as candidateCtrl" >
+       <article class="main-area" >
+
+        <div class="col-lg-12 scrolling"  >
+            <table class="table table-hover table-bordered" align="left" width="100%" >
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Candidate Name
+                    </th>
+                    <th>
+                        Candidate Email
+                    </th>
+                    <th>
+                        Login Time
+                    </th>
+                    <th>
+                        Logout Time
+                    </th>
+                    <!-- <th>
+                        Status
+                    </th>
+                    <th>
+                        &nbsp;
+                    </th> -->
+                </tr>
+                <tr ng-repeat="candidate in candidateCtrl.candidateCollections">
+                    <td>
+                        {{candidate.ID}}
+                    </td>
+                    <td>
+                        {{candidate.CandidateName}}
+                    </td>
+                    <td>
+                        {{candidate.CandidateEmail}}
+                    </td>
+                    <td>
+                     {{candidate.LoginTime}}
+                 </td>
+                 <td>
+                    {{candidate.LogoutTime}}
+                </td>
+               
+                </tr>
+
+            </table>
+        </div>
+    </article>
+
+</div>
+<footer>
+    <div class="footWrap">
+        &copy;2014 - Careernet Technologies Pvt. Ltd
+    </div>
+</footer>
+<script type="text/javascript" src="js/angular.js"></script>
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/sliding.js"></script>
+
+<script src="js/less-1.5.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angularDemo.js"></script>
+<script type='text/javascript'>
+$(document).ready(function () {
+    $("[rel=tooltip]").tooltip('hide');
+});
+</script>
+</body>
+</html>
