@@ -135,10 +135,12 @@ var testVar;
         function($scope) {
             this.ActiveBoxData = GetTestCollection();
             this.testCollectionData = [];
-            for (var i = 0; i < this.ActiveBoxData.length; i++) {
-                if (i % 3) {
-                    this.testCollectionData = this.ActiveBoxData[i];
+            var j=1;
+            for (var i=0; i < this.ActiveBoxData.length; i++) {
+                if (j % 3) {
+                    this.testCollectionData.push(this.ActiveBoxData[i]);
                 };
+                j++;
 
             };
             console.log(this.testCollectionData);
