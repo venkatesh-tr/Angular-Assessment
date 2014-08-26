@@ -4,6 +4,7 @@
 //http://fdietz.github.io/recipes-with-angular-js/common-user-interface-patterns/paginating-through-client-side-data.html
 
 var testVar;
+var boxVar = "1";
 
 (function() {
 
