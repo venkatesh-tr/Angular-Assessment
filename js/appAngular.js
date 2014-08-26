@@ -137,7 +137,7 @@ var testVar;
             this.testCollectionData = [];
             var j=1;
             for (var i=0; i < this.ActiveBoxData.length; i++) {
-                if (j % 3) {
+                if (i<3) {
                     this.testCollectionData.push(this.ActiveBoxData[i]);
                 };
                 j++;
