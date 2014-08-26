@@ -67,7 +67,7 @@ var boxVar = "1";
         };
 
 
-       // console.log(testCollection);
+        // console.log(testCollection);
         this.ActiveTestCollection = [];
         this.InActiveTestCollection = [];
 
@@ -123,6 +123,7 @@ var boxVar = "1";
 
     //box directives
     app.directive('boxControl', [
+
         function() {
             return {
                 restrict: 'E',
@@ -136,15 +137,65 @@ var boxVar = "1";
         function($scope) {
             this.ActiveBoxData = GetTestCollection();
             this.testCollectionData = [];
-            var j=1;
-            for (var i=0; i < this.ActiveBoxData.length; i++) {
-                if (i<3) {
+            var j = 1;
+            for (var i = 0; i < this.ActiveBoxData.length; i++) {
+                if (i < 3) {
                     this.testCollectionData.push(this.ActiveBoxData[i]);
                 };
                 j++;
 
             };
             console.log(this.testCollectionData);
+
+
+            // JavaScript Document
+            $scope.shiftDown = function(downArrow, rightArrow, rightBox, downBox) {console.log(jQuery('#rightArrow'));
+                var downArrowID = downArrow.id;
+                var rightArrowID = rightArrow;
+                var rightBoxID = rightBox;
+                var downBoxID = downBox;
+                // var numberOfRows = 3;
+                //rowHeads=new String{"firstRow", "secondRow", "thirdRow"};
+                if ($("#" + downArrowID + ".glyphicon-circle-arrow-down").is(":visible")) {
+                    // toggle all open rightShift to close
+                    $(".shiftLeft").animate({
+                        left: '-150px'
+                    }).hide(300);
+                    $(".show a").removeClass("glyphicon-circle-arrow-left").addClass("glyphicon-circle-arrow-right");
+                    // make all bottomShift to toggle
+                    $(".shiftDown").hide(10).css("height", "0");
+                    $(".show2 a").removeClass("glyphicon-circle-arrow-up").addClass("glyphicon-circle-arrow-down");
+
+
+
+
+                    if ($(".row-in").is(":visible")) $("*").removeClass("row-in"); // if rows already there remove everything
+                    if ($(".col").is(":visible"));
+                    else {
+                        /*$("[rel~='firstRow']").wrapAll('<div class="col" />');  
+            $("[rel~='secondRow']").wrapAll('<div class="col" />');
+            $("[rel~='thirdRow']").wrapAll('<div class="col" />'); */
+                        //$("[rel~='fourthRow']").wrapAll('<div class="col" />');   
+                        //$("#"+ downBoxID +".shiftDown").hide(); 
+                        $("#" + downBoxID + ".shiftDown").slideDown(0);
+                    }
+                    $(".shiftLeft").hide();
+                    //$("#"+ downBoxID +".shiftDown").css("top","-130px");
+                    $("#" + downBoxID + ".shiftDown").css("display", "block");
+                    //$("#"+ downBoxID +".shiftDown").show(1000);
+                    $("#" + downBoxID + ".shiftDown").css("top", "0");
+                    $("#" + downBoxID + ".shiftDown").animate({
+                        height: '80px'
+                    });
+                    $("#" + downArrowID).removeClass("glyphicon-circle-arrow-down").addClass("glyphicon-circle-arrow-up");
+                    $("#" + rightArrowID).removeClass("glyphicon-circle-arrow-left").addClass("glyphicon-circle-arrow-right");
+                } else {
+                    $(".shiftDown").animate({
+                        height: '0'
+                    }).hide(10);
+                    $("#" + downArrowID).removeClass("glyphicon-circle-arrow-up").addClass("glyphicon-circle-arrow-down");
+                }
+            }
         }
     ])
 
