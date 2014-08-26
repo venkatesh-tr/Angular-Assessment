@@ -125,7 +125,7 @@ var testVar;
         function() {
             return {
                 restrict: 'E',
-                templateUrl: 'box.html'
+                templateUrl: 'active-boxes.html'
             };
         }
     ])

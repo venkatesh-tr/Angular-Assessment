@@ -1,5 +1,6 @@
 <!doctype html>
 <html ng-app="AssessmentModule">
+
 <head>
     <meta charset="utf-8">
     <title>Assessment Test</title>
@@ -7,20 +8,22 @@
     <link rel="stylesheet/less" type="text/css" href="css/style.less">
 
     <script>
-
-        ddiconmenu.docinit({ menuid: 'myiconmenu', easing: "easeInOutCirc", dur: 500 });
-        ddiconmenu.docinit({ menuid: 'myiconmenu1', easing: "easeInOutCirc", dur: 500 });
-        ddiconmenu.docinit({ menuid: 'myiconmenu2', easing: "easeInOutCirc", dur: 500 });
-
-
+    // ddiconmenu.docinit({ menuid: 'myiconmenu', easing: "easeInOutCirc", dur: 500 });
+    // ddiconmenu.docinit({ menuid: 'myiconmenu1', easing: "easeInOutCirc", dur: 500 });
+    // ddiconmenu.docinit({ menuid: 'myiconmenu2', easing: "easeInOutCirc", dur: 500 });
     </script>
     <style></style>
 </head>
+
 <body>
     <div class="container">
         <header class="row">
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
-                <span class="logo"><a href="#"><span>HiRePro Logo</span></a></span>
+                <span class="logo">
+                    <a href="#">
+                        <span>HiRePro Logo</span>
+                    </a>
+                </span>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 text-center">
                 <div class="testTitle">
@@ -37,7 +40,8 @@
                             &nbsp;</div>
                         <div class="input-group input-group-sm">
                             <input type="text" class="form-control" placeholder="Search">
-                            <a href="#" class="input-group-addon"><span class="glyphicon glyphicon-search"></span>
+                            <a href="#" class="input-group-addon">
+                                <span class="glyphicon glyphicon-search"></span>
                             </a>
                         </div>
                     </div>
@@ -70,475 +74,18 @@
                 </div>
                 <div class="col-lg-9 display-jobs">
                     <div class="wrap">
-                    <a href="#" class="glyphicon glyphicon-download-alt downLoadBtn"></a>
+                        <a href="#" class="glyphicon glyphicon-download-alt downLoadBtn"></a>
                         <div class="row-in" style="">
                             <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel" style="width: 830px">
-                               
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <div class="container" style="clear: both">
-                                            <div class="carousel-caption">
-                                                <div style="width: 1500px">
-                                                    <div id="box1" class="baseBox" rel="firstCol firstRow">
-                                                        <span class="header-bar">Job ID #346
-                                                            <div class="show">
-                                                                <a onclick="shiftLeft(this, 'box1Down', 'box1a', 'box1b');" id="box1Left" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-right" title="Show Test Status" rel="tooltip"
-                                                                    data-toggle="tooltip" data-placement="left"></a>
-                                                            </div>
-                                                        </span>
-                                                        <div class="insideContent">
-                                                            <p>
-                                                                Offline Mumbai</p>
-                                                            <span>540</span>
-                                                        </div>
-                                                        <span class="footer-bar">
-                                                            <div class="show2">
-                                                                <a onclick="shiftDown(this, 'box1Left', 'box1a', 'box1b');" id="box1Down" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-down" title="Test dates & time" rel="tooltip"
-                                                                    data-toggle="tooltip" data-placement="right"></a>
-                                                            </div>
-                                                            <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                class="glyphicon glyphicon-off make-inactive"></a><a href="#" title="Upload Test"
-                                                                    rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
-                                                                </a><a href="#" title="Download Test" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                    class="glyphicon glyphicon-floppy-save make-inactive"></a></span>
-                                                    </div>
-                                                    <div id="box1a" class="shiftLeft" rel="firstCol firstRow">
-                                                        <span class="glyphicon glyphicon-arrow-left left-arrow"></span>
-                                                        <h2 class="test-status-h2">
-                                                            Test Status</h2>
-                                                        <ul class="right-list">
-                                                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-                                                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-                                                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-                                                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="shiftDown01">
-                                                        <div id="box1b" class="shiftDown" rel="firstCol firstRow">
-                                                            <span class="glyphicon glyphicon-arrow-up down-arrow"></span>
-                                                            <div class="dateWrap">
-                                                                <div class="date">
-                                                                    <p>
-                                                                        18 <span>Dec - 2013</span></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dateWrap2">
-                                                                To</div>
-                                                            <div class="dateWrap">
-                                                                <div class="date">
-                                                                    <p>
-                                                                        09 <span>Jan - 2013</span></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="box2" class="baseBox baseBoxActive" rel="firstCol secondRow">
-                                                        <span class="header-bar">Job ID #347
-                                                            <div class="show">
-                                                                <a onclick="shiftLeft(this, 'box2Down', 'box2a', 'box2b');" id="box2Left" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-right"></a>
-                                                            </div>
-                                                        </span>
-                                                        <div class="insideContent">
-                                                            <p>
-                                                                Offline Mumbai</p>
-                                                            <span>540</span>
-                                                        </div>
-                                                        <span class="footer-bar">
-                                                            <div class="show2">
-                                                                <a onclick="shiftDown(this, 'box2Left', 'box2a', 'box2b');" id="box2Down" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-down"></a>
-                                                            </div>
-                                                            <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                class="glyphicon glyphicon-off make-inactive"></a><a href="#" title="Upload Test"
-                                                                    rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
-                                                                </a><a href="#" title="Download Test" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                    class="glyphicon glyphicon-floppy-save make-inactive"></a></span><span class="downArrow glyphicon glyphicon-chevron-down">
-                                                                    </span>
-                                                    </div>
-                                                    <div id="box2a" class="shiftLeft" rel="firstCol secondRow">
-                                                        <span class="glyphicon glyphicon-arrow-left left-arrow"></span>
-                                                        <h2 class="test-status-h2">
-                                                            Test Status</h2>
-                                                        <ul class="right-list">
-                                                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-                                                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-                                                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-                                                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="shiftDown02">
-                                                        <div id="box2b" class="shiftDown" rel="firstCol secondRow">
-                                                            <ul>
-                                                                <li>19<sup>th</sup> Dec, 2013</li>
-                                                                <li>To</li>
-                                                                <li>15<sup>th</sup> Jan, 2014</li>
-                                                            </ul>
-                                                            <span class="cal-img glyphicon glyphicon-calendar"></span><span class="closeBottom"
-                                                                id="closeBottom"></span>
-                                                        </div>
-                                                    </div>
-                                                    <div id="box3" class="baseBox" rel="firstCol thirdRow">
-                                                        <span class="header-bar">Job ID #348
-                                                            <div class="show">
-                                                                <a onclick="shiftLeft(this, 'box3Down', 'box3a', 'box3b');" id="box3Left" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-right"></a>
-                                                            </div>
-                                                        </span>
-                                                        <div class="insideContent">
-                                                            <p>
-                                                                Offline Mumbai</p>
-                                                            <span>540</span>
-                                                        </div>
-                                                        <span class="footer-bar">
-                                                            <div class="show2">
-                                                                <a onclick="shiftDown(this, 'box3Left', 'box3a', 'box3b');" id="box3Down" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-down"></a>
-                                                            </div>
-                                                            <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                class="glyphicon glyphicon-off make-inactive"></a><a href="#" title="Upload Test"
-                                                                    rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
-                                                                </a><a href="#" title="Download Test" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                    class="glyphicon glyphicon-floppy-save make-inactive"></a></span>
-                                                    </div>
-                                                    <div id="box3a" class="shiftLeft" rel="firstCol thirdRow">
-                                                        <span class="glyphicon glyphicon-arrow-left left-arrow"></span>
-                                                        <h2 class="test-status-h2">
-                                                            Test Status</h2>
-                                                        <ul class="right-list">
-                                                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-                                                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-                                                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-                                                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="shiftDown03">
-                                                        <div id="box3b" class="shiftDown" rel="firstCol thirdRow">
-                                                            <ul>
-                                                                <li>19<sup>th</sup> Dec, 2013</li>
-                                                                <li>To</li>
-                                                                <li>15<sup>th</sup> Jan, 2014</li>
-                                                            </ul>
-                                                            <span class="cal-img glyphicon glyphicon-calendar"></span><span class="closeBottom"
-                                                                id="closeBottom"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="container" style="clear: both">
-                                            <div class="carousel-caption">
-                                                <div style="width: 1500px">
-                                                    <div id="box4" class="baseBox" rel="firstCol fourth">
-                                                        <span class="header-bar">Job ID #346
-                                                            <div class="show">
-                                                                <a onclick="shiftLeft(this, 'box4Down', 'box4a', 'box4b');" id="box4Left" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-right" title="Show Test Status" rel="tooltip"
-                                                                    data-toggle="tooltip" data-placement="left"></a>
-                                                            </div>
-                                                        </span>
-                                                        <div class="insideContent">
-                                                            <p>
-                                                                Offline Mumbai</p>
-                                                            <span>540</span>
-                                                        </div>
-                                                        <span class="footer-bar">
-                                                            <div class="show2">
-                                                                <a onclick="shiftDown(this, 'box4Left', 'box4a', 'box4b');" id="box4Down" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-down" title="Test dates & time" rel="tooltip"
-                                                                    data-toggle="tooltip" data-placement="right"></a>
-                                                            </div>
-                                                            <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                class="glyphicon glyphicon-off make-inactive"></a><a href="#" title="Upload Test"
-                                                                    rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
-                                                                </a><a href="#" title="Download Test" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                    class="glyphicon glyphicon-floppy-save make-inactive"></a></span>
-                                                    </div>
-                                                    <div id="box4a" class="shiftLeft" rel="firstCol fourth">
-                                                        <span class="glyphicon glyphicon-arrow-left left-arrow"></span>
-                                                        <h2 class="test-status-h2">
-                                                            Test Status</h2>
-                                                        <ul class="right-list">
-                                                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-                                                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-                                                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-                                                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="shiftDown01">
-                                                        <div id="box4b" class="shiftDown" rel="firstCol fourth">
-                                                            <span class="glyphicon glyphicon-arrow-up down-arrow"></span>
-                                                            <div class="dateWrap">
-                                                                <div class="date">
-                                                                    <p>
-                                                                        18 <span>Dec - 2013</span></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dateWrap2">
-                                                                To</div>
-                                                            <div class="dateWrap">
-                                                                <div class="date">
-                                                                    <p>
-                                                                        09 <span>Jan - 2013</span></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="box5" class="baseBox" rel="firstCol fifth">
-                                                        <span class="header-bar">Job ID #347
-                                                            <div class="show">
-                                                                <a onclick="shiftLeft(this, 'box5Down', 'box5a', 'box5b');" id="box5Left" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-right"></a>
-                                                            </div>
-                                                        </span>
-                                                        <div class="insideContent">
-                                                            <p>
-                                                                Offline Mumbai</p>
-                                                            <span>540</span>
-                                                        </div>
-                                                        <span class="footer-bar">
-                                                            <div class="show2">
-                                                                <a onclick="shiftDown(this, 'box5Left', 'box5a', 'box5b');" id="box5Down" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-down"></a>
-                                                            </div>
-                                                            <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                class="glyphicon glyphicon-off make-inactive"></a><a href="#" title="Upload Test"
-                                                                    rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
-                                                                </a><a href="#" title="Download Test" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                    class="glyphicon glyphicon-floppy-save make-inactive"></a></span>
-                                                    </div>
-                                                    <div id="box5a" class="shiftLeft" rel="firstCol fifth">
-                                                        <span class="glyphicon glyphicon-arrow-left left-arrow"></span>
-                                                        <h2 class="test-status-h2">
-                                                            Test Status</h2>
-                                                        <ul class="right-list">
-                                                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-                                                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-                                                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-                                                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="shiftDown02">
-                                                        <div id="box5b" class="shiftDown" rel="firstCol fifth">
-                                                            <ul>
-                                                                <li>19<sup>th</sup> Dec, 2013</li>
-                                                                <li>To</li>
-                                                                <li>15<sup>th</sup> Jan, 2014</li>
-                                                            </ul>
-                                                            <span class="cal-img glyphicon glyphicon-calendar"></span><span class="closeBottom"
-                                                                id="closeBottom"></span>
-                                                        </div>
-                                                    </div>
-                                                    <div id="box6" class="baseBox" rel="firstCol sixth">
-                                                        <span class="header-bar">Job ID #348
-                                                            <div class="show">
-                                                                <a onclick="shiftLeft(this, 'box6Down', 'box6a', 'box6b');" id="box6Left" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-right"></a>
-                                                            </div>
-                                                        </span>
-                                                        <div class="insideContent">
-                                                            <p>
-                                                                Offline Mumbai</p>
-                                                            <span>540</span>
-                                                        </div>
-                                                        <span class="footer-bar">
-                                                            <div class="show2">
-                                                                <a onclick="shiftDown(this, 'box6Left', 'box6a', 'box6b');" id="box6Down" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-down"></a>
-                                                            </div>
-                                                            <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                class="glyphicon glyphicon-off make-inactive"></a><a href="#" title="Upload Test"
-                                                                    rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
-                                                                </a><a href="#" title="Download Test" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                    class="glyphicon glyphicon-floppy-save make-inactive"></a></span>
-                                                    </div>
-                                                    <div id="box6a" class="shiftLeft" rel="firstCol sixth">
-                                                        <span class="glyphicon glyphicon-arrow-left left-arrow"></span>
-                                                        <h2 class="test-status-h2">
-                                                            Test Status</h2>
-                                                        <ul class="right-list">
-                                                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-                                                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-                                                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-                                                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="shiftDown03">
-                                                        <div id="box6b" class="shiftDown" rel="firstCol sixth">
-                                                            <ul>
-                                                                <li>19<sup>th</sup> Dec, 2013</li>
-                                                                <li>To</li>
-                                                                <li>15<sup>th</sup> Jan, 2014</li>
-                                                            </ul>
-                                                            <span class="cal-img glyphicon glyphicon-calendar"></span><span class="closeBottom"
-                                                                id="closeBottom"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="container" style="clear: both">
-                                            <div class="carousel-caption">
-                                                <div style="width: 1500px">
-                                                    <div id="box7" class="baseBox" rel="firstCol seventh">
-                                                        <span class="header-bar">Job ID #346
-                                                            <div class="show">
-                                                                <a onclick="shiftLeft(this, 'box7Down', 'box7a', 'box7b');" id="box7Left" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-right" title="Show Test Status" rel="tooltip"
-                                                                    data-toggle="tooltip" data-placement="left"></a>
-                                                            </div>
-                                                        </span>
-                                                        <div class="insideContent">
-                                                            <p>
-                                                                Offline Mumbai</p>
-                                                            <span>540</span>
-                                                        </div>
-                                                        <span class="footer-bar">
-                                                            <div class="show2">
-                                                                <a onclick="shiftDown(this, 'box7Left', 'box7a', 'box7b');" id="box7Down" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-down" title="Test dates & time" rel="tooltip"
-                                                                    data-toggle="tooltip" data-placement="right"></a>
-                                                            </div>
-                                                            <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                class="glyphicon glyphicon-off make-inactive"></a><a href="#" title="Upload Test"
-                                                                    rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
-                                                                </a><a href="#" title="Download Test" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                    class="glyphicon glyphicon-floppy-save make-inactive"></a></span>
-                                                    </div>
-                                                    <div id="box7a" class="shiftLeft" rel="firstCol seventh">
-                                                        <span class="glyphicon glyphicon-arrow-left left-arrow"></span>
-                                                        <h2 class="test-status-h2">
-                                                            Test Status</h2>
-                                                        <ul class="right-list">
-                                                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-                                                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-                                                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-                                                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="shiftDown01">
-                                                        <div id="box7b" class="shiftDown" rel="firstCol seventh">
-                                                            <span class="glyphicon glyphicon-arrow-up down-arrow"></span>
-                                                            <div class="dateWrap">
-                                                                <div class="date">
-                                                                    <p>
-                                                                        18 <span>Dec - 2013</span></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="dateWrap2">
-                                                                To</div>
-                                                            <div class="dateWrap">
-                                                                <div class="date">
-                                                                    <p>
-                                                                        09 <span>Jan - 2013</span></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="box8" class="baseBox" rel="firstCol eighth">
-                                                        <span class="header-bar">Job ID #347
-                                                            <div class="show">
-                                                                <a onclick="shiftLeft(this, 'box8Down', 'box8a', 'box8b');" id="box8Left" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-right"></a>
-                                                            </div>
-                                                        </span>
-                                                        <div class="insideContent">
-                                                            <p>
-                                                                Offline Mumbai</p>
-                                                            <span>540</span>
-                                                        </div>
-                                                        <span class="footer-bar">
-                                                            <div class="show2">
-                                                                <a onclick="shiftDown(this, 'box8Left', 'box8a', 'box8b');" id="box8Down" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-down"></a>
-                                                            </div>
-                                                            <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                class="glyphicon glyphicon-off make-inactive"></a><a href="#" title="Upload Test"
-                                                                    rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
-                                                                </a><a href="#" title="Download Test" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                    class="glyphicon glyphicon-floppy-save make-inactive"></a></span>
-                                                    </div>
-                                                    <div id="box8a" class="shiftLeft" rel="firstCol eighth">
-                                                        <span class="glyphicon glyphicon-arrow-left left-arrow"></span>
-                                                        <h2 class="test-status-h2">
-                                                            Test Status</h2>
-                                                        <ul class="right-list">
-                                                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-                                                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-                                                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-                                                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="shiftDown02">
-                                                        <div id="box8b" class="shiftDown" rel="firstCol eighth">
-                                                            <ul>
-                                                                <li>19<sup>th</sup> Dec, 2013</li>
-                                                                <li>To</li>
-                                                                <li>15<sup>th</sup> Jan, 2014</li>
-                                                            </ul>
-                                                            <span class="cal-img glyphicon glyphicon-calendar"></span><span class="closeBottom"
-                                                                id="closeBottom"></span>
-                                                        </div>
-                                                    </div>
-                                                    <div id="box9" class="baseBox" rel="firstCol nineth">
-                                                        <span class="header-bar">Job ID #348
-                                                            <div class="show">
-                                                                <a onclick="shiftLeft(this, 'box9Down', 'box9a', 'box9b');" id="box9Left" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-right"></a>
-                                                            </div>
-                                                        </span>
-                                                        <div class="insideContent">
-                                                            <p>
-                                                                Offline Mumbai</p>
-                                                            <span>540</span>
-                                                        </div>
-                                                        <span class="footer-bar">
-                                                            <div class="show2">
-                                                                <a onclick="shiftDown(this, 'box9Left', 'box9a', 'box9b');" id="box9Down" href="#"
-                                                                    class="glyphicon glyphicon-circle-arrow-down"></a>
-                                                            </div>
-                                                            <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                class="glyphicon glyphicon-off make-inactive"></a><a href="#" title="Upload Test"
-                                                                    rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
-                                                                </a><a href="#" title="Download Test" rel="tooltip" data-toggle="tooltip" data-placement="left"
-                                                                    class="glyphicon glyphicon-floppy-save make-inactive"></a></span>
-                                                    </div>
-                                                    <div id="box9a" class="shiftLeft" rel="firstCol nineth">
-                                                        <span class="glyphicon glyphicon-arrow-left left-arrow"></span>
-                                                        <h2 class="test-status-h2">
-                                                            Test Status</h2>
-                                                        <ul class="right-list">
-                                                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a></li>
-                                                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a></li>
-                                                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a></li>
-                                                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="shiftDown03">
-                                                        <div id="box9b" class="shiftDown" rel="firstCol nineth">
-                                                            <ul>
-                                                                <li>19<sup>th</sup> Dec, 2013</li>
-                                                                <li>To</li>
-                                                                <li>15<sup>th</sup> Jan, 2014</li>
-                                                            </ul>
-                                                            <span class="cal-img glyphicon glyphicon-calendar"></span><span class="closeBottom"
-                                                                id="closeBottom"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left">
-                                </span></a><a class="right carousel-control" href="#myCarousel" data-slide="next"><span
-                                    class="glyphicon glyphicon-chevron-right"></span></a>
+                                <!-- Directive used to show carousel -->
+                                <box-Control></box-Control>
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left">
+                                    </span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -564,26 +111,32 @@
                 <div class="col-lg-4 part-02">
                     <div class="insideRow2Wrap">
                         <div class="insideRow2">
-                            <input name="" type="checkbox" value=""><span class=" label label-info">Attended</span>
+                            <input name="" type="checkbox" value="">
+                            <span class=" label label-info">Attended</span>
                         </div>
                         <div class="insideRow2">
-                            <input name="" type="checkbox" value=""><span class=" label label-danger">Not Attended</span>
+                            <input name="" type="checkbox" value="">
+                            <span class=" label label-danger">Not Attended</span>
                         </div>
                         <div class="insideRow2">
-                            <input name="" type="checkbox" value=""><span class=" label label-warning">Password
-                                Disabled</span>
+                            <input name="" type="checkbox" value="">
+                            <span class=" label label-warning">Password Disabled
+                            </span>
                         </div>
                         <div class="insideRow2">
-                            <input name="" type="checkbox" value=""><span class=" label label-default">Attended</span>
+                            <input name="" type="checkbox" value="">
+                            <span class=" label label-default">Attended</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 part-03">
                     <div class="insideRow3">
-                        <a href="#"><span class="glyphicon glyphicon-floppy-save" title="Download List" rel="tooltip"
-                            data-toggle="tooltip" data-placement="left"></span></a><a href="#"><span class="glyphicon glyphicon-refresh"
-                                title="Refresh List" rel="tooltip" data-toggle="tooltip" data-placement="left"></span>
-                            </a>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-floppy-save" title="Download List" rel="tooltip" data-toggle="tooltip" data-placement="left"></span>
+                        </a>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-refresh" title="Refresh List" rel="tooltip" data-toggle="tooltip" data-placement="left"></span>
+                        </a>
                     </div>
                 </div>
                 <br clear="all">
@@ -634,7 +187,8 @@
                         </td>
                         <td>
                             <a href="#" title="Activate User" rel="tooltip" data-toggle="tooltip" data-placement="left">
-                                <span class="glyphicon glyphicon-eye-close"></span></a>
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -657,7 +211,9 @@
                             <span class="label label-primary">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -680,7 +236,9 @@
                             <span class="label label-success">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -703,7 +261,9 @@
                             <span class="label label-info">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -726,7 +286,9 @@
                             <span class="label label-warning">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -749,7 +311,9 @@
                             <span class="label label-danger">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -772,7 +336,9 @@
                             <span class="label label-default">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -796,7 +362,8 @@
                         </td>
                         <td>
                             <a href="#" title="Activate User" rel="tooltip" data-toggle="tooltip" data-placement="left">
-                                <span class="glyphicon glyphicon-eye-close"></span></a>
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -819,7 +386,9 @@
                             <span class="label label-primary">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -842,7 +411,9 @@
                             <span class="label label-success">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -865,7 +436,9 @@
                             <span class="label label-info">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -888,7 +461,9 @@
                             <span class="label label-warning">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -911,7 +486,9 @@
                             <span class="label label-danger">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -934,7 +511,9 @@
                             <span class="label label-default">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -958,7 +537,8 @@
                         </td>
                         <td>
                             <a href="#" title="Activate User" rel="tooltip" data-toggle="tooltip" data-placement="left">
-                                <span class="glyphicon glyphicon-eye-close"></span></a>
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -981,7 +561,9 @@
                             <span class="label label-primary">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1004,7 +586,9 @@
                             <span class="label label-success">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1027,7 +611,9 @@
                             <span class="label label-info">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1050,7 +636,9 @@
                             <span class="label label-warning">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1073,7 +661,9 @@
                             <span class="label label-danger">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1096,7 +686,9 @@
                             <span class="label label-default">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1120,7 +712,8 @@
                         </td>
                         <td>
                             <a href="#" title="Activate User" rel="tooltip" data-toggle="tooltip" data-placement="left">
-                                <span class="glyphicon glyphicon-eye-close"></span></a>
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1143,7 +736,9 @@
                             <span class="label label-primary">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1166,7 +761,9 @@
                             <span class="label label-success">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1189,7 +786,9 @@
                             <span class="label label-info">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1212,7 +811,9 @@
                             <span class="label label-warning">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1235,7 +836,9 @@
                             <span class="label label-danger">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -1258,7 +861,9 @@
                             <span class="label label-default">Attended</span>
                         </td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon-eye-close"></span></a>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                            </a>
                         </td>
                     </tr>
                 </table>
@@ -1273,14 +878,15 @@
     <script type="text/javascript" src="js/angular.js"></script>
     <script src="js/jquery-1.9.1.js"></script>
     <script src="js/sliding.js"></script>
-    
+
     <script src="js/less-1.5.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/appAngular.js"></script>
     <script type='text/javascript'>
-        $(document).ready(function () {
-            $("[rel=tooltip]").tooltip('hide');
-        });
+    $(document).ready(function() {
+        $("[rel=tooltip]").tooltip('hide');
+    });
     </script>
 </body>
+
 </html>
