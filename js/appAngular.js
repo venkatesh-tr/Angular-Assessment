@@ -149,11 +149,12 @@ var t = "box1Left" + "1";
                 j++;
 
             };
-            console.log(this.box1b);
+            //console.log(this.box1b);
 
-            this.testFunction = function(vartest) {
-
-                alert(vartest);
+            this.testFunction = function($element,vartest) {
+                console.log($element.target);
+                //console.log(angular.element('.glyphicon-circle-arrow-down'));
+               // console.log($('#' + donwnArrow))
             };
 
             /* this.shiftDown = function(downArrow, rightArrow, rightBox, downBox) {
