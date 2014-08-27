@@ -17,7 +17,7 @@
                         <span class="footer-bar">
                             <div class="show2">
                                 <!-- <a onclick="shiftDown(this, 'box1Left' , 'box1a', 'box1b');" id="box1Down" href="#" class="glyphicon glyphicon-circle-arrow-down" title="Test dates & time" rel="tooltip" data-toggle="tooltip" data-placement="right"></a> -->
-                                <a ng-click="shiftDown(this, 'box1Left' , 'box1a', 'box1b');" id="box1Down" href="#" class="glyphicon glyphicon-circle-arrow-down" title="Test dates & time" rel="tooltip" data-toggle="tooltip" data-placement="right"></a>
+                                <a onclick='shiftDown(this, {{activeBoxCtrl.box1Left}}, {{activeBoxCtrl.box1a}}, {{activeBoxCtrlbox1b}});' id="box1Down" href="#" class="glyphicon glyphicon-circle-arrow-down" title="Test dates & time" rel="tooltip" data-toggle="tooltip" data-placement="right"></a>
                             </div>
                             <a href="#" title="Make Inactive" rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-off make-inactive"></a>
                             <a href="#" title="Upload Test" rel="tooltip" data-toggle="tooltip" data-placement="left" class="glyphicon glyphicon-cloud-upload make-inactive">
@@ -30,13 +30,13 @@
                         <h2 class="test-status-h2">
                             Test Status</h2>
                         <ul class="right-list">
-                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">135</span></a>
+                            <li><a href="#">Attended:&nbsp;<span class="label label-warning pull-right">{{activeBoxCtrl.testCollectionData[0].Attented}}</span></a>
                             </li>
-                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">35</span></a>
+                            <li><a href="#">Attending:&nbsp;<span class="label label-success pull-right">{{activeBoxCtrl.testCollectionData[0].Attending}}</span></a>
                             </li>
-                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">15</span></a>
+                            <li><a href="#">Not Attended:&nbsp;<span class="label label-danger pull-right">{{activeBoxCtrl.testCollectionData[0].NotAttended}}</span></a>
                             </li>
-                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">05</span></a>
+                            <li><a href="#">Password Disabled:&nbsp;<span class="label label-default pull-right">{{activeBoxCtrl.testCollectionData[0].PasswordDisabled}}</span></a>
                             </li>
                         </ul>
                     </div>
